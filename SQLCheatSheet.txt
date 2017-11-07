@@ -1,0 +1,20 @@
+SQL Quick Look Cheat Sheet for Evaluation Data
+
+Joining Tables to take advantage of Forign keys
+SELECT Filename, Filelocation
+	
+FROM Cleanspeech.Cleanspeech JOIN Cleanspeech.Filelocation
+    
+ON  Cleanspeech.idFilelocation = Filelocation.idFilelocation
+  
+
+
+Selecting unique data sets
+SELECT DISTINCT idspeakerinfo FROM Cleanspeech.Cleanspeech
+
+
+Selecting single column of data
+SELECT idspeakerinfo FROM Cleanspeech.Cleanspeech
+
+Selecting multiple columns
+SELECT idspeakerinfo, Filename FROM Cleanspeec.Cleanspeech
